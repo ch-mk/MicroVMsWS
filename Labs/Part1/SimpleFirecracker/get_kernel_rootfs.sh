@@ -14,10 +14,11 @@
           exit 1
   fi
 
-  echo "Downloading $kernel..."
-  curl -fsSL -o $dest_kernel $kernel
+  echo -e "\nDownloading $kernel..."
+  wget -q --show-progress -O $dest_kernel $kernel
 
-  echo "Downloading $rootfs..."
-  curl -fsSL -o $dest_rootfs $rootfs
+  sleep 1
+  echo -e "\nDownloading $rootfs..."
+  wget -q --show-progress -O $dest_rootfs $rootfs
 
   echo "Saved kernel file to $dest_kernel and root block device to $dest_rootfs."
