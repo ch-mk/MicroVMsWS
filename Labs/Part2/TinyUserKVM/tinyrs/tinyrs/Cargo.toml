@@ -1,0 +1,12 @@
+[package]
+name = "tinyrs"
+version = "0.1.0"
+authors = ["ch-mk <mark.cherp@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+kvm-ioctls = "0.5.0"
+kvm-bindings = "0.2.0"
+libc = "0.2.70"

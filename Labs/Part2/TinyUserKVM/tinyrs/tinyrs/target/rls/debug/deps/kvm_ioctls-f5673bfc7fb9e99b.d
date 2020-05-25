@@ -1,0 +1,12 @@
+/home/mc/Main/Virtualization/MicroVMsWS/Labs/Part2/TinyUserKVM/tinyrs/tinyrs/target/rls/debug/deps/kvm_ioctls-f5673bfc7fb9e99b.rmeta: /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/lib.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/kvm_ioctls.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/cap.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/mod.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/device.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/system.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/vcpu.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/vm.rs
+
+/home/mc/Main/Virtualization/MicroVMsWS/Labs/Part2/TinyUserKVM/tinyrs/tinyrs/target/rls/debug/deps/kvm_ioctls-f5673bfc7fb9e99b.d: /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/lib.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/kvm_ioctls.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/cap.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/mod.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/device.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/system.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/vcpu.rs /home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/vm.rs
+
+/home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/lib.rs:
+/home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/kvm_ioctls.rs:
+/home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/cap.rs:
+/home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/mod.rs:
+/home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/device.rs:
+/home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/system.rs:
+/home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/vcpu.rs:
+/home/mc/.cargo/registry/src/github.com-1ecc6299db9ec823/kvm-ioctls-0.5.0/src/ioctls/vm.rs:
