@@ -20,7 +20,7 @@ FIRECRACKER_LATEST_RELEASE=$(curl -s https://api.github.com/repos/firecracker-mi
 | cut -d : -f 2,3 \
 | tr -d \")
 
-
+sleep 1
 echo -e "\nGetting firecracker..."
 echo -e "Url: ${FIRECRACKER_LATEST_RELEASE}\n"
 # firecracker + jailer

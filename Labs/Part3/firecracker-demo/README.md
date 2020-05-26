@@ -31,8 +31,8 @@ Raise the maximum processes limit.
 
 ```bash
 sudo tee -a >> /etc/security/limits.conf <<EOL
-ec2-user soft nproc 16384
-ec2-user hard nproc 16384
+mc soft nproc 16384
+mc hard nproc 16384
 EOL
 ```
 
@@ -81,17 +81,18 @@ to random lighting of the heatmap.
 
 #### Pick a microVM and play with it
 
-Pick a number `0 <= ID < 4000`. For this example `42` was chosen.
+./connect.sh
 
-```bash
-ID="42"
+#Pick a number `0 <= ID < 4000`. For this example `42` was chosen.
+#```bash
+#ID="42"
 # get the IP for that microVM
-ifconfig fc-$ID-tap0 | grep "inet "
-       inet 169.254.0.170  netmask 255.255.255.252  broadcast 0.0.0.0
+#ifconfig fc-$ID-tap0 | grep "inet "
+#       inet 169.254.0.170  netmask 255.255.255.252  broadcast 0.0.0.0
 
 # IP of microVM on other side is *one less*
-ssh -i xenial.rootfs.id_rsa root@169.254.0.169
-```
+#ssh -i xenial.rootfs.id_rsa root@169.254.0.169
+#```
 
 You're now inside the microVM. Do as you please.
 

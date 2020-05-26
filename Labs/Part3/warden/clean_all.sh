@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo rm -rf jail/*
+sudo rm -rf images jail jailer firecracker

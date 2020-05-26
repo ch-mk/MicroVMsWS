@@ -14,6 +14,8 @@ sudo snap install --classic code
 # install C\C++ extension
 # install CodeLLDB extension
 
+sudo apt install -y docker.io
+
 sudo setfacl -m u:${USER}:rw /dev/kvm
 
 sudo apt install -y iperf3
@@ -25,3 +27,5 @@ sudo snap install --classic kubectl
 sudo snap install --classic  go
 
 curl https://sh.rustup.rs -sSf | sh
+
+echo -e "\nPlease restart for all changes to take effect\n"

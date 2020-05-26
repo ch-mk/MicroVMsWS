@@ -9,5 +9,5 @@ tiny.o: tiny.c
 	$(CC) $(CFLAGS)  -c tiny.c -o tiny.o
 
 clean:
-	rm -f *.tiny
+	rm -f *.o tiny
 

@@ -12,23 +12,11 @@ lsmod | grep kvm
 # grant read/wrtie access to kvm
 sudo setfacl -m u:${USER}:rw /dev/kvm
 
-# get latest tag
-latest=$(basename $(curl -fsSLI -o /dev/null -w  %{url_effective}  https://github.com/firecracker-microvm/firecracker/releases/latest))
+# get firecracker
+./get_fc.sh
 
-# download firecracker binary
-curl -LOJ https://github.com/firecracker-microvm/firecracker/releases/download/${latest}/firecracker-${latest}-$(uname -m)
-
-# remove version from binay name
-mv firecracker-${latest}-$(uname -m) firecracker
-
-# make firecracker executable
-chmod +x firecracker
-
-# remove leftover socket
-rm -f /tmp/firecracker.socket
-
-# launch firecracker
-./firecracker --api-sock /tmp/firecracker.socket
+# start firecracker
+./start_fc
 
 ########## Terminal 2 ##########
 
@@ -42,7 +30,7 @@ rm -f /tmp/firecracker.socket
 ./set_rootfs.sh
 
 # start firecracker
-./start_fc.sh
+./start_vm.sh
 
 ########## Terminal 2 ##########
 
