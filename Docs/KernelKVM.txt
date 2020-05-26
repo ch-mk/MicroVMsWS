@@ -1,0 +1,62 @@
+ls
+// check for vmx support
+vmxSupport() {
+	int getVmxSupport, vmxBit;
+    __asm__("mov $1, %rax");
+    __asm__("cpuid");
+    __asm__("mov %%ecx , %0\n\t":"=r" (getVmxSupport));
+    vmxBit = (getVmxSupport >> 5) & 1;
+}
+
+// enable vmx  
+getVmxOperation()) {
+__asm__ __volatile__ ("vmxon %[pa]; setna %[ret]"
+		: [ret]"=rm"(ret)
+		: [pa]"m"(phys)
+		: "cc", "memory");
+	return ret;
+}
+
+// allocate vmcs structure 
+vmcsOperations()) {
+__asm__ __volatile__ ("vmxon %[pa]; setna %[ret]"
+		: [ret]"=rm"(ret)
+		: [pa]"m"(phys)
+		: "cc", "memory");
+	return ret;
+}
+
+// set VMCS control field wirh guest state and define exit reasons
+initVmcsControlField()) {
+	vmwrite(VM_EXIT_CONTROLS, __rdmsr1(MSR_IA32_VMX_EXIT_CTLS) | VM_EXIT_HOST_ADDR_SPACE_SIZE);
+	unsigned long guest_stack[GUEST_STACK_SIZE];
+	costum_rsp = &guest_stack[GUEST_STACK_SIZE];
+	costum_rip = guest_code;
+	vmwrite(GUEST_RSP, (uint64_t)costum_rsp);
+	vmwrite(GUEST_RIP, (uint64_t)costum_rip);
+}
+
+// Launch VM and wait for guest exit
+initVmLaunchProcess()) {
+	
+	_vmlaunch() {
+		__asm__ __volatile__("vmwrite %%rsp, %[host_rsp];"
+					"lea 1f(%%rip), %%rax;"
+					"vmwrite %%rax, %[host_rip];"
+					"vmlaunch;"
+					"incq (%%rsp);"
+					);
+		return ret;
+	}
+
+	_vmlaunch();
+
+	if (((unsigned long)vmExit_reason()) == 26) { do ...}
+}
+
+// turn vmx off
+vmxoffOperation() {
+	deallocate_vmxon_region()
+	deallocate_vmcs_region()
+	asm volatile ("vmxoff\n" : : : "cc");
+}
