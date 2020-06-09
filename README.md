@@ -13,6 +13,6 @@ Hands On MicroVMs Workshop
 * DevOps use cases
 
 **Perspectives:**
-* security boundaries
+* Security boundaries
 * Vs containers
 * Performance
